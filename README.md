@@ -20,9 +20,8 @@ The page limit counts distinct requested URLs; redirects can make extra requests
 Each result includes the URL, status, title, links, and elapsed milliseconds.
 Page failures appear in the output; configuration and output errors exit nonzero.
 Results stream as pages finish. Output files must not already exist.
-Ctrl-C cancels pending work and keeps results already written.
+Ctrl+C cancels pending work and keeps results already written.
 
-HTML only: no JavaScript rendering or robots.txt handling.
 For custom storage, pass a `crawler.Sink` to `crawler.Crawl`.
 
 ```sh
